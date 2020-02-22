@@ -1,0 +1,13 @@
+# Solución
+
+Primero nos debemos dar cuenta que podemos empezar con un $1$ entonces la secuencia queda definida como $1, 0, 1, 0,...$ o podemos empezar con el $0$ y queda definida como $0, 1, 0, 1, ...$. Entonces, para resolver este problema debemos considerar este caso y cual de estos casos nos llevara menos pasos para resolverlos.
+
+Para encontrar la solución de la secuencia $1, 0, 1, 0, ...$. Contemos cuantos $1$s están fuera de lugar (es decir, que esten en una posición impar indexando en $0$) originalmente digamos que este número es $x_1$; mientras que el números de $0$s fuera de su lugar (posiciones pares) es $z_1$. Luego, podemos cambiar $0$s que están fuera de su lugar con $1$s que estan fuera de su lugar, porque si cambiamos un $1$ fuera de su lugar con un $0$ fuera del suyo; obtenemos que ambos quedan en un lugar donde corresponden. 
+
+- Si $x_1 > z_1$ quiere decir que hay más $1$s fuera de su lugar que $0$s; en este caso, hay que cambiar los $x_1 - z_1$ restantes por $0$s (operación del tipo 2). Porque una vez hagamos todos los cambios de posiciones, todos los $0$s estarán en sus posiciones y no nos queda más opción que cambiar los $1$s restantes con la operación 2. En el caso de $x_1 < z_1$ es lo mismo pero ahora cambiaremos los $0$s restantes por $1$s.
+
+- Si $x_1 > z_1$ debemos hacer $z_1$ operaciones del tipo $1$ y $x_1 - z_1$ operaciones del tipo 2. Dandonos un total de $z_1 + x_1 - z_1 = x_1$ operaciones. Mientras que en el caso de $z_1 > x_1$ el número de operaciones es de $x_1 + z_1 - x_1 = z_1$. 
+
+En cualquier caso, el número total de operaciones que debemos hacer es $\max(z_1, x_1)$ (se puede ver como que la respuesta es el máximo porque vas a tener que hacer operaciones 1 del minimo y lo que sobra del 2, entonces lo que sobra más el minimo es precisamente el máximo).
+
+Luego, si $x_2$ es número de 1s fuera de su lugar en la otra disposición y $z_2$ el de los $0$s tenemos que su número de movimientos es de $\max(x_2, z_1)$. Entonces, la respuesta al problema es el más chico entre los 2, es decir, $\min(\max(x_1, z_1), \max(x_2, z_2))$.
