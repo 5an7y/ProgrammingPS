@@ -27,7 +27,7 @@ Los problemas del repositorio ordenados por temas:
 
 - Ideas: 
 (Problemas que son resolvibles con conceptos basicos, pero requieren de una idea no trivial)
-  - [Coronavirus](../Coronavirus)
+  - [Coronavirus](../tree/master/Coronavirus)
 
 - Programación Dinamica:
-  - [SubsecuenciaCrecienteMásLarga](../LIS)
+  - [SubsecuenciaCrecienteMásLarga](../tree/master/LIS)
