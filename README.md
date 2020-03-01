@@ -25,6 +25,9 @@ Puedes checar mi usario en Omegaup, [5an7y](https://omegaup.com/profile/5an7y/).
 
 Los problemas del repositorio ordenados por temas:
 
+- Implementación:
+  - [Thanos Sort](../tree/master/thanosSort)
+
 - Ideas: 
 (Problemas que son resolvibles con conceptos basicos, pero requieren de una idea no trivial)
   - [Coronavirus](../tree/master/Coronavirus)
