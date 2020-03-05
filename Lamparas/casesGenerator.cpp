@@ -42,12 +42,12 @@ int main(){
     //Los distintos casos, ajustando tamaños de entrada.
     
     int n = ale(1, 100000);
-    bool cosa[n];
+    bool cosa[n + 1];
     int numeros[n];
     
     for (int i = 0; i < n; i++){
-      cosa[i] = false;
-      numeros[i] = i;
+      cosa[i + 1] = false;
+      numeros[i] = i+1;
     }
 
     int m = ale(1, 1000);
@@ -74,7 +74,7 @@ int main(){
     int con = 0;
 
     for (int i = 0;i < n; i++)
-      if(!cosa[i])
+      if(!cosa[i+1])
         con++;
     
     //Sacamos la solución
