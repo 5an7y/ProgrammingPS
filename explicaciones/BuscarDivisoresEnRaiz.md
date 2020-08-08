@@ -33,10 +33,10 @@ solo queremos las parejas tal que <img src="https://render.githubusercontent.com
 la primera entrada va a ser la menor.
 
 Teniendo encuenta esto, y recordando que <img src="https://render.githubusercontent.com/render/math?math=b%20%3D%20n%2Fa">. Queremos
-encontra los divsores <img src="https://render.githubusercontent.com/render/math?math= a"> tal que
-<img src="https://render.githubusercontent.com/render/math?math= a \leq n/a">lo cuál implica que 
-<img src="https://render.githubusercontent.com/render/math?math=\frac{n}{b} = "> y entonces 
-<img src="https://render.githubusercontent.com/render/math?math= a \leq \sqrt{n}">. Por tanto, solo debemos buscar hasta 
+encontra los divsores <img src="https://render.githubusercontent.com/render/math?math=a"> tal que
+<img src="https://render.githubusercontent.com/render/math?math=a \leq n/a">lo cuál implica que 
+<img src="https://render.githubusercontent.com/render/math?math=a^2 \leq n"> y entonces 
+<img src="https://render.githubusercontent.com/render/math?math=a \leq \sqrt{n}">. Por tanto, solo debemos buscar hasta 
 la raiz del números, los demás divisores aparecen como complemento de los ya encontrados.
 
 ``` cpp
