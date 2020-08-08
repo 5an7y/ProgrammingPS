@@ -6,10 +6,10 @@ fuerza bruta e intentemos buscar un patrón. Tomemos el número 18 como ejemplo.
 
 Algo que debemos tener encuenta es que si <img src="https://render.githubusercontent.com/render/math?math=a">
 es un divisor de <img src="https://render.githubusercontent.com/render/math?math=n">, quiere decir que
-<img src="https://render.githubusercontent.com/render/math?math=\frac{n}{a} = b"> para un entero 
+<img src="https://render.githubusercontent.com/render/math?math=n/a = b"> para un entero 
 <img src="https://render.githubusercontent.com/render/math?math=b">. Lo interesante es que <img src="https://render.githubusercontent.com/render/math?math=b">
 igual es un divisor de <img src="https://render.githubusercontent.com/render/math?math=n">, porque 
-<img src="https://render.githubusercontent.com/render/math?math=\frac{n}{b} = a">.
+<img src="https://render.githubusercontent.com/render/math?math=n/b = a">.
 
 Entonces, cada que encontramos un divisor, en realidad tenemos 2. Tomando el ejemplo de 18 si hacemos la fuerza bruta obtenemos la lista
 
@@ -23,7 +23,7 @@ Utilizando lo mencionado anteriormente, podemos hacer parejas cada que encontrem
 
 En efecto, apartir de la mitad las parejas se estan repitiendo. Entonces no es necesario checar todos los números hasta 
 <img src="https://render.githubusercontent.com/render/math?math=n">. Podrás ya darte una idea de una posible poda,
-podemos checar los números hasta <img src="https://render.githubusercontent.com/render/math?math=\frac{n}{2}">, porque
+podemos checar los números hasta <img src="https://render.githubusercontent.com/render/math?math=n/2">, porque
 el unico divisor después de allí es el número mismo.
 
 Sin embargo, podemos hacer mejor que eso. Muchas veces cuando tenemos parejas repetidas de este estilo es conveniente darles ciertas
@@ -34,7 +34,7 @@ la primera entrada va a ser la menor.
 
 Teniendo encuenta esto, y recordando que <img src="https://render.githubusercontent.com/render/math?math=b%20%3D%20n%2Fa">. Queremos
 encontra los divsores <img src="https://render.githubusercontent.com/render/math?math=a"> tal que
-<img src="https://render.githubusercontent.com/render/math?math=a \leq n/a">lo cuál implica que 
+<img src="https://render.githubusercontent.com/render/math?math=a \leq n/a"> lo cuál implica que 
 <img src="https://render.githubusercontent.com/render/math?math=a^2 \leq n"> y entonces 
 <img src="https://render.githubusercontent.com/render/math?math=a \leq \sqrt{n}">. Por tanto, solo debemos buscar hasta 
 la raiz del números, los demás divisores aparecen como complemento de los ya encontrados.
