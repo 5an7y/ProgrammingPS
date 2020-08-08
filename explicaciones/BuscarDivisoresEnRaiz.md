@@ -1,7 +1,7 @@
 # Buscar divisores de un número en raíz de n
 
 En varios problemas vamos a tener que buscar los divisores de ún número y muchas veces la forma bruta no es optima. 
-La forma bruta es itetar sobre todos los número y ver si es divisor. Entonces para esto tomemos un ejemplo, hagamos la
+La forma bruta es iterar sobre todos los números y ver si cada uno es un divisor o no. Entonces para esto tomemos un ejemplo, hagamos la
 fuerza bruta e intentemos buscar un patrón. Tomemos el número 18 como ejemplo.
 
 Algo que debemos tener encuenta es que si <img src="https://render.githubusercontent.com/render/math?math=a">
