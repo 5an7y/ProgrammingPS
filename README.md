@@ -27,11 +27,15 @@ Los problemas del repositorio ordenados por temas:
 
 - Implementación:
   - [Thanos Sort](../tree/master/ThanosSort)
-  - [Lamparas] (../tree/master/Lamparas)
+  - [Lamparas](../tree/master/Lamparas)
 
 - Ideas: 
 (Problemas que son resolvibles con conceptos basicos, pero requieren de una idea no trivial)
   - [Coronavirus](../tree/master/Coronavirus)
+
+- Estructura de datos:
+  - Listas Enlazadas
+    - [Alianza de villanos](../tree/master/AlianzaDeVillanos)
 
 - Programación Dinamica:
   - [SubsecuenciaCrecienteMásLarga](../tree/master/LIS)
