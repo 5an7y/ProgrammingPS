@@ -30,7 +30,7 @@ void unir(int x, int y) {
   // Hacemos que Y no apunte a nada
   conexiones[y] -> next = NULL;
   
-  if(conexiones[x] -> next) {
+  if (conexiones[x] -> next) {
     /* Si X tiene siguiente, hacemos ahora que
     Y apunte a ese siguiente */
     conexiones[y] -> next = conexiones[x] -> next;
