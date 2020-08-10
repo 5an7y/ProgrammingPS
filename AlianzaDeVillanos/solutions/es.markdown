@@ -1,10 +1,8 @@
-# Alianza de villanos (Solución)
-
-## Reducción del problema
+# Reducción del problema
 
 El problema se puede reducir a tener varias listas de nodos, entonces quieres poder quitar un nodo de cierta lista y además añadir. Debemos responder preguntas del estilo *quien es la cabeza de la lista a la que pertenece el nodo **X***.
 
-## Solución
+# Solución
 
 Para la solución usaremos una lista doblemente ligada. Podemos considerar un nodo solitario como una lista de tamaño $1$. Teniendo esto en cuenta, al inicio tenemos un total de $n$ listas de tamaño $1$.
 
@@ -16,7 +14,7 @@ struct nodo {
 };
 ```
 
-Las implementaciones se hacen con apuntadores, se pueden ajustar para usar memoria estatica. Después de cada codigo se indicara como; por ejemplo, aquí solo cambia los apuntadores por enteros.
+Las implementaciones se hacen con apuntadores, se pueden ajustar para usar memoria estática. Después de cada código se indicara como; por ejemplo, aquí solo cambia los apuntadores por enteros.
 
 ```cpp
 // Inicializamos cada nodo
@@ -28,7 +26,7 @@ for (int i = 0; i <= n; ++i) {
 
 En esta caso $n$ es la cantidad de villanos. Solo se asegura que el valor de cada nodo sea su posición, para cuando iteremos con los apuntadores sepamos en que nodo estamos.
 
-### Operación unir
+## Operación unir
 
 Vamos a tener operaciones de dos tipos, una de ellas es la de unir. Precisamente lo que se hace es que se nos dan dos nodos, $X$ y $Y$. Vamos hacer que el siguiente a $X$ sea $Y$. 
 
@@ -60,7 +58,7 @@ void unir(int x, int y) {
   // Hacemos que Y no apunte a nada
   conexiones[y] -> next = NULL;
   
-  if(conexiones[x] -> next) {
+  if (conexiones[x] -> next) {
     /* Si X tiene siguiente, hacemos ahora que
     Y apunte a ese siguiente */
     conexiones[y] -> next = conexiones[x] -> next;
@@ -75,15 +73,15 @@ void unir(int x, int y) {
 }
 ```
 
-Si no lo implementas con apuntadroes, los -> next se deben cambiar por `conexiones[conexiones[y].next]`. Analogamente con el anterior (ya depende de como se implemente).
+Si no lo implementas con apuntadores, los -> next se deben cambiar por `conexiones[conexiones[y].next]`. Análogamente con el anterior (ya depende de como se implemente).
 
-### Encontrar el jefe
+## Encontrar el jefe
 
 La otra operación a realizar es encontrar la cabeza de una lista. Para eso solo vamos al nodo pedido y retrocedemos hasta encontrar el nodo que no tiene anterior
 
 ```cpp
-// Funcion para ver quien es el jefe maximo de X
-int BuscarElJefe (int x) {
+// Función para ver quien es el jefe máximo de X
+int buscarElJefe (int x) {
   /* Llevamos una variable act, que es el nodo
   en el cual vamos actualmente */
   nodo* act = conexiones[x];
