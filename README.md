@@ -29,6 +29,9 @@ Los problemas del repositorio ordenados por temas:
   - [Thanos Sort](../tree/master/ThanosSort)
   - [Lamparas](../tree/master/Lamparas)
 
+- Ordenamientos:
+  - [Mejorando la empresa](../tree/master/../../ProgrammingPS/MejorandoLaEmpresa) 
+
 - Ideas: 
 (Problemas que son resolvibles con conceptos básicos, pero requieren de una idea no trivial)
   - [Coronavirus](../tree/master/Coronavirus)
